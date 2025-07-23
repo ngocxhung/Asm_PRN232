@@ -1,0 +1,227 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|d:\\1_prn232\\pe thi th\u1EED\\assignment_prn232\\bussinessobjects\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|d:\\1_prn232\\pe thi th\u1EED\\assignment_prn232\\bussinessobjects\\models\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\models\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|d:\\1_prn232\\pe thi th\u1EED\\assignment_prn232\\bussinessobjects\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|d:\\1_prn232\\pe thi th\u1EED\\assignment_prn232\\bussinessobjects\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|d:\\1_prn232\\pe thi th\u1EED\\assignment_prn232\\bussinessobjects\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|d:\\1_prn232\\pe thi th\u1EED\\assignment_prn232\\bussinessobjects\\bussinessobjects.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\bussinessobjects.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|d:\\1_prn232\\pe thi th\u1EED\\assignment_prn232\\bussinessobjects\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DC15B65-4DA3-4AE8-A149-A6544126E269}|Repositories\\Repositories.csproj|d:\\1_prn232\\pe thi th\u1EED\\assignment_prn232\\repositories\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DC15B65-4DA3-4AE8-A149-A6544126E269}|Repositories\\Repositories.csproj|solutionrelative:repositories\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|d:\\1_prn232\\pe thi th\u1EED\\assignment_prn232\\dataacess\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|solutionrelative:dataacess\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LibraryDbContext.cs",
+              "DocumentMoniker": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\BussinessObjects\\Models\\LibraryDbContext.cs",
+              "RelativeDocumentMoniker": "BussinessObjects\\Models\\LibraryDbContext.cs",
+              "ToolTip": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\BussinessObjects\\Models\\LibraryDbContext.cs",
+              "RelativeToolTip": "BussinessObjects\\Models\\LibraryDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:51:36.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\BussinessObjects\\appsettings.json",
+              "RelativeDocumentMoniker": "BussinessObjects\\appsettings.json",
+              "ToolTip": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\BussinessObjects\\appsettings.json",
+              "RelativeToolTip": "BussinessObjects\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-23T14:45:54.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\BussinessObjects\\Models\\User.cs",
+              "RelativeDocumentMoniker": "BussinessObjects\\Models\\User.cs",
+              "ToolTip": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\BussinessObjects\\Models\\User.cs",
+              "RelativeToolTip": "BussinessObjects\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:40:10.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\BussinessObjects\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "BussinessObjects\\Models\\Book.cs",
+              "ToolTip": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\BussinessObjects\\Models\\Book.cs",
+              "RelativeToolTip": "BussinessObjects\\Models\\Book.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswBwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:39:50.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Author.cs",
+              "DocumentMoniker": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\BussinessObjects\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "BussinessObjects\\Models\\Author.cs",
+              "ToolTip": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\BussinessObjects\\Models\\Author.cs",
+              "RelativeToolTip": "BussinessObjects\\Models\\Author.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:39:00.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BussinessObjects",
+              "DocumentMoniker": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj",
+              "RelativeDocumentMoniker": "BussinessObjects\\BussinessObjects.csproj",
+              "ToolTip": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj*",
+              "RelativeToolTip": "BussinessObjects\\BussinessObjects.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-23T14:22:36.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\Repositories\\Class1.cs",
+              "RelativeDocumentMoniker": "Repositories\\Class1.cs",
+              "ToolTip": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\Repositories\\Class1.cs",
+              "RelativeToolTip": "Repositories\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:20:40.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\DataAcess\\Class1.cs",
+              "RelativeDocumentMoniker": "DataAcess\\Class1.cs",
+              "ToolTip": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\DataAcess\\Class1.cs",
+              "RelativeToolTip": "DataAcess\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:19:58.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\BussinessObjects\\Class1.cs",
+              "RelativeDocumentMoniker": "BussinessObjects\\Class1.cs",
+              "ToolTip": "D:\\1_PRN232\\PE Thi th\u1EED\\Assignment_PRN232\\BussinessObjects\\Class1.cs",
+              "RelativeToolTip": "BussinessObjects\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:19:28.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 29,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1421,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:35:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:36:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 29,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

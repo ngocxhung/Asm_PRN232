@@ -1,0 +1,15 @@
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\obj\Debug\net8.0\BussinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\obj\Debug\net8.0\BussinessObjects.AssemblyInfoInputs.cache
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\obj\Debug\net8.0\BussinessObjects.AssemblyInfo.cs
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\obj\Debug\net8.0\BussinessObjects.csproj.CoreCompileInputs.cache
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\bin\Debug\net8.0\BussinessObjects.deps.json
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\bin\Debug\net8.0\BussinessObjects.runtimeconfig.json
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\bin\Debug\net8.0\BussinessObjects.dll
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\bin\Debug\net8.0\BussinessObjects.pdb
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\obj\Debug\net8.0\BussinessObjects.csproj.AssemblyReference.cache
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\obj\Debug\net8.0\BussinessObjects.dll
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\obj\Debug\net8.0\refint\BussinessObjects.dll
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\obj\Debug\net8.0\BussinessObjects.pdb
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\obj\Debug\net8.0\BussinessObjects.genruntimeconfig.cache
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\obj\Debug\net8.0\ref\BussinessObjects.dll
+D:\1_PRN232\PE Thi thử\Assignment_PRN232\BussinessObjects\bin\Debug\net8.0\appsettings.json
