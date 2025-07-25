@@ -12,7 +12,7 @@ namespace BussinessObjects.Models
         [ForeignKey("Book")]
         public int BookId { get; set; }
         public int Quantity { get; set; }
-        public BorrowRecord BorrowRecord { get; set; }
-        public Book Book { get; set; }
+        public BorrowRecord BorrowRecord { get; set; } = null!;
+        public Book Book { get; set; } = null!;
     }
 } 

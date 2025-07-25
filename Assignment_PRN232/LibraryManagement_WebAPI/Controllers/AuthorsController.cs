@@ -8,7 +8,6 @@ namespace LibraryManagement_WebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize(Roles = "Admin")]
     public class AuthorsController : ControllerBase
     {
         private readonly IAuthorRepository _authorRepository;
@@ -18,12 +17,15 @@ namespace LibraryManagement_WebAPI.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll() => Ok(await _authorRepository.GetAllAsync());
 
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> Get(int id) => Ok(await _authorRepository.GetByIdAsync(id));
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([FromBody] Author author)
         {
             try
@@ -37,6 +39,7 @@ namespace LibraryManagement_WebAPI.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(int id, [FromBody] Author author)
         {
             try
@@ -50,9 +53,11 @@ namespace LibraryManagement_WebAPI.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id) => Ok(await _authorRepository.DeleteAsync(id));
 
         [HttpGet("search")]
+        [AllowAnonymous]
         public async Task<IActionResult> Search([FromQuery] string keyword) => Ok(await _authorRepository.SearchAsync(keyword));
     }
 } 

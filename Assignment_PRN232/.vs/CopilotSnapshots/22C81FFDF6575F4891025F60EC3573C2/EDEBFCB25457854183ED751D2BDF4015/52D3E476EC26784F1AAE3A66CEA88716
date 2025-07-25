@@ -1,0 +1,67 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Text.Json;
+using System.Net.Http.Headers;
+using BussinessObjects.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace LibraryManagement_WebApp.Pages.Admin
+{
+    public class FinesModel : PageModel
+    {
+        public List<Fine> Fines { get; set; } = new List<Fine>();
+        public string? ErrorMessage { get; set; }
+        
+        [BindProperty(SupportsGet = true)]
+        public string? SearchKeyword { get; set; }
+
+        public async Task<IActionResult> OnGetAsync()
+        {
+            var role = HttpContext.Session.GetString("UserRole");
+            if (role != "Admin")
+                return RedirectToPage("/Login");
+            using var client = CreateClient();
+            if (!string.IsNullOrEmpty(SearchKeyword))
+            {
+                var res = await client.GetAsync($"https://localhost:5001/api/fines/search?keyword={SearchKeyword}");
+                if (res.IsSuccessStatusCode)
+                {
+                    var json = await res.Content.ReadAsStringAsync();
+                    var fines = JsonSerializer.Deserialize<List<Fine>>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                    Fines = fines ?? new List<Fine>();
+                }
+                else
+                {
+                    Fines = new List<Fine>();
+                    ErrorMessage = "Không tìm được khoản phạt phù hợp!";
+                }
+            }
+            else
+            {
+                var res = await client.GetAsync("https://localhost:5001/api/fines");
+                if (res.IsSuccessStatusCode)
+                {
+                    var json = await res.Content.ReadAsStringAsync();
+                    var fines = JsonSerializer.Deserialize<List<Fine>>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                    Fines = fines ?? new List<Fine>();
+                }
+                else
+                {
+                    Fines = new List<Fine>();
+                    ErrorMessage = "Không lấy được danh sách phạt!";
+                }
+            }
+            return Page();
+        }
+        
+        private HttpClient CreateClient()
+        {
+            var client = new HttpClient();
+            var token = HttpContext.Session.GetString("JWToken");
+            if (!string.IsNullOrEmpty(token))
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            return client;
+        }
+    }
+}

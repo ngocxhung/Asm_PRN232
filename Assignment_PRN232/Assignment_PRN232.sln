@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36310.24 d17.14
+VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessObjects", "BussinessObjects\BussinessObjects.csproj", "{AE6530E3-031F-4291-994B-DC3D95436351}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement_WebAPI", "LibraryManagement_WebAPI\LibraryManagement_WebAPI.csproj", "{58AC5E7B-B26C-4567-9282-9290C3E82F4F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement_WebApp", "LibraryManagement_WebApp\LibraryManagement_WebApp.csproj", "{133B44EF-FBE2-485B-BFBC-A7692BD740D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{10F3D1FA-7C05-491F-B4FA-A6F272BEAC9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{133B44EF-FBE2-485B-BFBC-A7692BD740D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{133B44EF-FBE2-485B-BFBC-A7692BD740D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{133B44EF-FBE2-485B-BFBC-A7692BD740D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10F3D1FA-7C05-491F-B4FA-A6F272BEAC9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10F3D1FA-7C05-491F-B4FA-A6F272BEAC9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10F3D1FA-7C05-491F-B4FA-A6F272BEAC9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10F3D1FA-7C05-491F-B4FA-A6F272BEAC9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

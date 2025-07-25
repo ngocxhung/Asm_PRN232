@@ -5,9 +5,9 @@ namespace BussinessObjects.Models
 {
     public class LibraryDbContext : DbContext
     {
+        public LibraryDbContext() { }
         public LibraryDbContext(DbContextOptions<LibraryDbContext> options) : base(options) { }
 
-        public LibraryDbContext() { }
         public DbSet<User> Users { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<Author> Authors { get; set; }
@@ -26,12 +26,24 @@ namespace BussinessObjects.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            
+            // Configure decimal precision for Fine.Amount
+            modelBuilder.Entity<Fine>()
+                .Property(f => f.Amount)
+                .HasPrecision(18, 2);
 
             // User - BorrowRecord (1-n)
             modelBuilder.Entity<BorrowRecord>()
                 .HasOne(br => br.User)
                 .WithMany(u => u.BorrowRecords)
                 .HasForeignKey(br => br.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Book - BorrowRecord (1-n)
+            modelBuilder.Entity<BorrowRecord>()
+                .HasOne(br => br.Book)
+                .WithMany()
+                .HasForeignKey(br => br.BookId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             // Book - Author (n-1)

@@ -21,7 +21,7 @@
     <table class="table table-bordered table-hover align-middle">
         <thead class="table-light">
             <tr>
-                <th>Mã phạt</th><th>Tên người dùng</th><th>Số tiền</th><th>Lý do</th><th>Ngày phạt</th><th>Trạng thái</th>
+                <th>Mã phạt</th><th>Tên người dùng</th><th>Số tiền</th>><th>Ngày phạt</th><th>Trạng thái</th>
             </tr>
         </thead>
         <tbody>
@@ -33,9 +33,8 @@
                     <td>@f.FineId</td>
                     <td>@(f.BorrowRecord != null && f.BorrowRecord.User != null ? f.BorrowRecord.User.FullName : "Không rõ")</td>
                     <td>@f.Amount.ToString("N0")</td>
-                    <td>@f.Reason</td>
-                        <td>@f.PaidDate</td>
-                    <td>@(f.Paid ? "Đã nộp" : "Chưa nộp")</td>
+                        <td>@f.PaidAt</td>
+                    <td>@f.Status</td>
                 </tr>
             }
         }

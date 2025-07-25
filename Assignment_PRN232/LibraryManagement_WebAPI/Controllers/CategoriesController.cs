@@ -8,7 +8,6 @@ namespace LibraryManagement_WebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize(Roles = "Admin")]
     public class CategoriesController : ControllerBase
     {
         private readonly ICategoryRepository _categoryRepository;
@@ -18,10 +17,13 @@ namespace LibraryManagement_WebAPI.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll() => Ok(await _categoryRepository.GetAllAsync());
 
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> Get(int id) => Ok(await _categoryRepository.GetByIdAsync(id));
+        [Authorize(Roles = "Admin")]
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] Category category)
@@ -35,6 +37,7 @@ namespace LibraryManagement_WebAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [Authorize(Roles = "Admin")]
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] Category category)

@@ -11,7 +11,7 @@ namespace DataAcess
         private readonly LibraryDbContext _context;
         public BookDAO(LibraryDbContext context)
         {
-            _context = context;
+            _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
         public async Task<List<Book>> GetAllAsync() => await _context.Books.Include(b => b.Author).Include(b => b.Category).Include(b => b.Publisher).ToListAsync();

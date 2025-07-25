@@ -11,7 +11,7 @@ namespace BussinessObjects.Models
         public int BookId { get; set; }
         [Required]
         [StringLength(200)]
-        public string Title { get; set; }
+        public string Title { get; set; } = string.Empty;
         [ForeignKey("Author")]
         public int AuthorId { get; set; }
         [ForeignKey("Category")]
@@ -20,16 +20,16 @@ namespace BussinessObjects.Models
         public int? PublisherId { get; set; }
         public int? PublishYear { get; set; }
         [StringLength(20)]
-        public string ISBN { get; set; }
-        public string Description { get; set; }
+        public string? ISBN { get; set; }
+        public string? Description { get; set; }
         public int Quantity { get; set; }
         public int Available { get; set; }
         [StringLength(100)]
-        public string Location { get; set; }
+        public string? Location { get; set; }
         [StringLength(20)]
-        public string Status { get; set; } // Available/Unavailable
+        public string Status { get; set; } = "Available"; // Available/Unavailable
         [StringLength(255)]
-        public string ImageUrl { get; set; }
+        public string? ImageUrl { get; set; }
      
         public Author? Author { get; set; }
         public Category? Category { get; set; }

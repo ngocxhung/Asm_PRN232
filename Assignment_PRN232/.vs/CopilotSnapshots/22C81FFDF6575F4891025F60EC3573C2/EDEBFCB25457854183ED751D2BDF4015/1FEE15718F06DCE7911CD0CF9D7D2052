@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BussinessObjects.Models
+{
+    public class User
+    {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int UserId { get; set; }
+        [Required]
+        [StringLength(100)]
+        public string Username { get; set; } = string.Empty;
+        [Required]
+        public string PasswordHash { get; set; } = string.Empty;
+        [StringLength(100)]
+        public string? FullName { get; set; }
+        [StringLength(100)]
+        public string? Email { get; set; }
+        [StringLength(20)]
+        public string? Phone { get; set; }
+        [StringLength(20)]
+        public string Role { get; set; } = "Reader"; // Admin, Librarian, Reader
+        public bool Status { get; set; } = true; // Active/Inactive
+        public DateTime CreatedAt { get; set; }
+        [StringLength(255)]
+        public string? ImageUrl { get; set; }
+        [Microsoft.AspNetCore.Mvc.ModelBinding.BindNever]
+        [System.Text.Json.Serialization.JsonIgnore]
+        [Newtonsoft.Json.JsonIgnore]
+        public ICollection<BorrowRecord>? BorrowRecords { get; set; }
+    }
+    public class UserRegisterModel
+    {
+        [Required(ErrorMessage = "Username is required")]
+        [StringLength(100, ErrorMessage = "Username cannot exceed 100 characters")]
+        public string Username { get; set; } = string.Empty;
+        [Required(ErrorMessage = "Password is required")]
+        [DataType(DataType.Password)]
+        public string PasswordHash { get; set; } = string.Empty;
+        [Required(ErrorMessage = "Full Name is required")]
+        [StringLength(100, ErrorMessage = "Full Name cannot exceed 100 characters")]
+        public string FullName { get; set; } = string.Empty;
+        [EmailAddress(ErrorMessage = "Invalid Email Address")]
+        public string? Email { get; set; }
+        [Phone(ErrorMessage = "Invalid Phone Number")]
+        public string? Phone { get; set; }
+        public string? ImageUrl { get; set; } 
+
+    }
+
+} 

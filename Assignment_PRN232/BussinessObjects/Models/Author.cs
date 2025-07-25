@@ -11,8 +11,8 @@ namespace BussinessObjects.Models
         public int AuthorId { get; set; }
         [Required]
         [StringLength(100)]
-        public string AuthorName { get; set; }
-        public string Description { get; set; }
+        public string AuthorName { get; set; } = string.Empty;
+        public string? Description { get; set; }
         [JsonIgnore]
         public ICollection<Book>? Books { get; set; }
     }

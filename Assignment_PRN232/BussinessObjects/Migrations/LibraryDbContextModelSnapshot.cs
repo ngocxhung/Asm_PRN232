@@ -144,11 +144,17 @@ namespace BussinessObjects.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BorrowId"));
 
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("BorrowDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DueDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("ExtendCount")
+                        .HasColumnType("int");
 
                     b.Property<string>("Note")
                         .IsRequired()
@@ -166,6 +172,8 @@ namespace BussinessObjects.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("BorrowId");
+
+                    b.HasIndex("BookId");
 
                     b.HasIndex("UserId");
 
@@ -208,13 +216,16 @@ namespace BussinessObjects.Migrations
                     b.Property<int>("BorrowId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("Paid")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("PaidDate")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Reason")
+                    b.Property<int>("DaysLate")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("PaidAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -348,11 +359,19 @@ namespace BussinessObjects.Migrations
 
             modelBuilder.Entity("BussinessObjects.Models.BorrowRecord", b =>
                 {
+                    b.HasOne("BussinessObjects.Models.Book", "Book")
+                        .WithMany()
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("BussinessObjects.Models.User", "User")
                         .WithMany("BorrowRecords")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.Navigation("Book");
 
                     b.Navigation("User");
                 });

@@ -1,0 +1,66 @@
+﻿using BussinessObjects.Models;
+using DataAcess;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace Repositories
+{
+    public class UserRepository : IUserRepository
+    {
+        private readonly UserDAO _userDao;
+        public UserRepository(UserDAO userDao)
+        {
+            _userDao = userDao;
+        }
+
+        public async Task<User?> AuthenticateAsync(string username, string password)
+        {
+            var user = await _userDao.GetByUsernameAsync(username);
+            if (user == null) return null;
+            
+            try
+            {
+                // Check if the stored password is a valid BCrypt hash
+                if (string.IsNullOrEmpty(user.PasswordHash) || 
+                    user.PasswordHash.Length != 60 || 
+                    !user.PasswordHash.StartsWith("$2"))
+                {
+                    // If it's not a BCrypt hash, treat it as plain text and update it
+                    if (user.PasswordHash == password)
+                    {
+                        // Update the password to BCrypt hash
+                        user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(password);
+                        await _userDao.UpdateAsync(user.UserId, user);
+                        return user;
+                    }
+                    return null;
+                }
+                
+                // Verify BCrypt hash normally
+                if (!BCrypt.Net.BCrypt.Verify(password, user.PasswordHash)) 
+                    return null;
+                    
+                return user;
+            }
+            catch (BCrypt.Net.SaltParseException)
+            {
+                // If BCrypt verification fails, check if it's plain text
+                if (user.PasswordHash == password)
+                {
+                    // Update to proper BCrypt hash
+                    user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(password);
+                    await _userDao.UpdateAsync(user.UserId, user);
+                    return user;
+                }
+                return null;
+            }
+        }
+
+        public Task<List<User>> GetAllAsync() => _userDao.GetAllAsync();
+        public Task<User?> GetByIdAsync(int id) => _userDao.GetByIdAsync(id);
+        public Task<User> CreateAsync(User user) => _userDao.CreateAsync(user);
+        public Task<User?> UpdateAsync(int id, User user) => _userDao.UpdateAsync(id, user);
+        public Task<bool> DeleteAsync(int id) => _userDao.DeleteAsync(id);
+        public Task<List<User>> SearchAsync(string keyword) => _userDao.SearchAsync(keyword);
+    }
+}

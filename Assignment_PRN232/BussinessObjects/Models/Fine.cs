@@ -11,9 +11,10 @@ namespace BussinessObjects.Models
         [ForeignKey("BorrowRecord")]
         public int BorrowId { get; set; }
         public decimal Amount { get; set; }
-        public string Reason { get; set; }
-        public bool Paid { get; set; }
-        public DateTime? PaidDate { get; set; }
-        public BorrowRecord BorrowRecord { get; set; }
+        public int DaysLate { get; set; }
+        public string Status { get; set; } = "Unpaid"; // Unpaid, Paid
+        public DateTime CreatedAt { get; set; }
+        public DateTime? PaidAt { get; set; }
+        public BorrowRecord BorrowRecord { get; set; } = null!;
     }
 } 

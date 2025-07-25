@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj": {}
+    "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj": {}
   },
   "projects": {
-    "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj": {
+    "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj",
+        "projectUniqueName": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj",
         "projectName": "BussinessObjects",
-        "projectPath": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj",
-        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\obj\\",
+        "projectPath": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -94,21 +99,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\DataAcess.csproj": {
+    "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\DataAcess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\DataAcess.csproj",
+        "projectUniqueName": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\DataAcess.csproj",
         "projectName": "DataAcess",
-        "projectPath": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\DataAcess.csproj",
-        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\obj\\",
+        "projectPath": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\DataAcess.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -122,8 +131,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj": {
-                "projectPath": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj"
+              "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj": {
+                "projectPath": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj"
               }
             }
           }
@@ -137,7 +146,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -158,21 +168,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj": {
+    "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj",
+        "projectUniqueName": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj",
         "projectName": "LibraryManagement_WebAPI",
-        "projectPath": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj",
-        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\obj\\",
+        "projectPath": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -186,8 +200,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\Repositories.csproj": {
-                "projectPath": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\Repositories.csproj"
+              "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\Repositories.csproj": {
+                "projectPath": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\Repositories.csproj"
               }
             }
           }
@@ -201,7 +215,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -231,21 +246,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\Repositories.csproj": {
+    "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\Repositories.csproj",
-        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\obj\\",
+        "projectPath": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -259,8 +278,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\DataAcess.csproj": {
-                "projectPath": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\DataAcess.csproj"
+              "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\DataAcess.csproj": {
+                "projectPath": "D:\\1_PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\DataAcess.csproj"
               }
             }
           }
@@ -274,7 +293,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -295,7 +315,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

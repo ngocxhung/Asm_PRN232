@@ -12,6 +12,11 @@ namespace Repositories
         {
             _bookDao = bookDao;
         }
+
+        public BookRepository()
+        {
+        }
+
         public Task<List<Book>> GetAllAsync() => _bookDao.GetAllAsync();
         public Task<Book> GetByIdAsync(int id) => _bookDao.GetByIdAsync(id);
         public Task<Book> CreateAsync(Book book) => _bookDao.CreateAsync(book);

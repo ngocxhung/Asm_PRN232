@@ -11,8 +11,8 @@ namespace BussinessObjects.Models
         public int PublisherId { get; set; }
         [Required]
         [StringLength(100)]
-        public string PublisherName { get; set; }
-        public string ContactInfo { get; set; }
+        public string PublisherName { get; set; } = string.Empty;
+        public string? ContactInfo { get; set; }
         [JsonIgnore]
         public ICollection<Book>? Books { get; set; }
     }

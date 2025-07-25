@@ -1,0 +1,204 @@
+﻿@page
+@model LibraryManagement_WebApp.Pages.UserPage.CurrentBorrowsModel
+@{
+    ViewData["Title"] = "Sách đang mượn";
+    Layout = "_UserLayout";
+}
+
+<div class="container-fluid py-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="mb-3">Sách đang mượn</h2>
+            
+            @if (!string.IsNullOrEmpty(Model.Message))
+            {
+                <div class="alert alert-@Model.MessageType alert-dismissible fade show" role="alert">
+                    @Model.Message
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            @if (Model.CurrentBorrows != null && Model.CurrentBorrows.Any())
+            {
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Sách</th>
+                                        <th>Tác giả</th>
+                                        <th>Ngày mượn</th>
+                                        <th>Hạn trả</th>
+                                        <th>Trạng thái</th>
+                                        <th>Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var borrow in Model.CurrentBorrows)
+                                    {
+                                        var daysRemaining = (borrow.DueDate - DateTime.Now).Days;
+                                        var isOverdue = daysRemaining < 0;
+                                        var isNearDue = daysRemaining <= 3 && daysRemaining >= 0;
+                                        
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="@(string.IsNullOrEmpty(borrow.Book?.ImageUrl) ? "/images/default-book.jpg" : borrow.Book.ImageUrl)" 
+                                                         class="me-3" style="width: 50px; height: 70px; object-fit: cover;">
+                                                    <div>
+                                                        <strong>@borrow.Book?.Title</strong>
+                                                        <br>
+                                                        <small class="text-muted">@borrow.Book?.Category?.CategoryName</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>@borrow.Book?.Author?.AuthorName</td>
+                                            <td>@borrow.BorrowDate.ToString("dd/MM/yyyy")</td>
+                                            <td>
+                                                <span class="@(isOverdue ? "text-danger" : isNearDue ? "text-warning" : "text-success")">
+                                                    @borrow.DueDate.ToString("dd/MM/yyyy")
+                                                </span>
+                                                <br>
+                                                <small class="@(isOverdue ? "text-danger" : isNearDue ? "text-warning" : "text-muted")">
+                                            @if (isOverdue)
+                                            {
+                                                <i class="bi bi-exclamation-triangle"></i> Quá hạn @Math.Abs(daysRemaining) ngày
+                                            }
+                                            else if (isNearDue)
+                                            {
+                                                <i class="bi bi-clock"></i> Còn @daysRemaining ngày
+                                            }
+                                            else
+                                            {
+                                                <i class="bi bi-check-circle"></i> Còn @daysRemaining ngày
+                                            }
+                                        </small>
+                                            </td>
+                                            <td>
+                                                @if (isOverdue)
+                                                {
+                                                    <span class="badge bg-danger">Quá hạn</span>
+                                                }
+                                                else if (isNearDue)
+                                                {
+                                                    <span class="badge bg-warning">Sắp hết hạn</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-success">Đúng hạn</span>
+                                                }
+                                            </td>
+                                            <td>
+                                                <div class="btn-group" role="group">
+                                                    @if (!isOverdue && borrow.ExtendCount < 2)
+                                                    {
+                                                        <button type="button" class="btn btn-outline-primary btn-sm" 
+                                                                onclick="extendBorrow(@borrow.BorrowId)">
+                                                            <i class="bi bi-clock"></i> Gia hạn
+                                                        </button>
+                                                    }
+                                                    <button type="button" class="btn btn-outline-success btn-sm" 
+                                                            onclick="returnBook(@borrow.BorrowId)">
+                                                        <i class="bi bi-check-circle"></i> Trả sách
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <i class="bi bi-book display-1 text-muted"></i>
+                    <h4 class="mt-3">Bạn chưa mượn sách nào</h4>
+                    <p class="text-muted">Hãy tìm và mượn sách từ thư viện</p>
+                    <a href="/UserPage/Books" class="btn btn-primary">
+                        <i class="bi bi-search"></i> Tìm sách
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Extend Modal -->
+<div class="modal fade" id="extendModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Gia hạn mượn sách</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form method="post" id="extendForm">
+                <div class="modal-body">
+                    <p>Bạn có muốn gia hạn thêm 7 ngày cho sách này?</p>
+                    <div class="alert alert-info">
+                        <i class="bi bi-info-circle"></i>
+                        <strong>Lưu ý:</strong> Bạn chỉ có thể gia hạn tối đa 2 lần cho mỗi sách.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-check-circle"></i> Xác nhận gia hạn
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Return Modal -->
+<div class="modal fade" id="returnModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Trả sách</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form method="post" id="returnForm">
+                <div class="modal-body">
+                    <p>Bạn có chắc chắn muốn trả sách này?</p>
+                    <div class="alert alert-warning">
+                        <i class="bi bi-exclamation-triangle"></i>
+                        <strong>Lưu ý:</strong> Nếu trả sách quá hạn, bạn sẽ bị phạt.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="submit" class="btn btn-success">
+                        <i class="bi bi-check-circle"></i> Xác nhận trả sách
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function extendBorrow(borrowId) {
+            document.getElementById('extendForm').action = `/UserPage/CurrentBorrows?handler=Extend&borrowId=${borrowId}`;
+            new bootstrap.Modal(document.getElementById('extendModal')).show();
+        }
+        
+        function returnBook(borrowId) {
+            document.getElementById('returnForm').action = `/UserPage/CurrentBorrows?handler=Return&borrowId=${borrowId}`;
+            new bootstrap.Modal(document.getElementById('returnModal')).show();
+        }
+    </script>
+}
+
+@section Styles {
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+}

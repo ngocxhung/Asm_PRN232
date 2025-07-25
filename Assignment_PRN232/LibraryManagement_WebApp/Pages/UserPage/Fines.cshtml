@@ -1,0 +1,181 @@
+@page
+@model LibraryManagement_WebApp.Pages.UserPage.FinesModel
+@{
+    ViewData["Title"] = "Quản lý phạt";
+    Layout = "_UserLayout";
+}
+
+<div class="container-fluid py-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="mb-3">Quản lý phạt</h2>
+            
+            @if (!string.IsNullOrEmpty(Model.Message))
+            {
+                <div class="alert alert-@Model.MessageType alert-dismissible fade show" role="alert">
+                    @Model.Message
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            @if (Model.Fines != null && Model.Fines.Any())
+            {
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Sách</th>
+                                        <th>Ngày mượn</th>
+                                        <th>Hạn trả</th>
+                                        <th>Ngày trả</th>
+                                        <th>Số ngày trễ</th>
+                                        <th>Số tiền phạt</th>
+                                        <th>Trạng thái</th>
+                                        <th>Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var fine in Model.Fines)
+                                    {
+                                        var daysLate = fine.DaysLate;
+                                        var isPaid = fine.Status == "Paid";
+                                        
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="@(string.IsNullOrEmpty(fine.BorrowRecord?.Book?.ImageUrl) ? "/images/default-book.jpg" : fine.BorrowRecord.Book.ImageUrl)" 
+                                                         class="me-3" style="width: 50px; height: 70px; object-fit: cover;">
+                                                    <div>
+                                                        <strong>@fine.BorrowRecord?.Book?.Title</strong>
+                                                        <br>
+                                                        <small class="text-muted">@fine.BorrowRecord?.Book?.Author?.AuthorName</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>@fine.BorrowRecord?.BorrowDate.ToString("dd/MM/yyyy")</td>
+                                            <td>@fine.BorrowRecord?.DueDate.ToString("dd/MM/yyyy")</td>
+                                            <td>@(fine.BorrowRecord?.ReturnDate?.ToString("dd/MM/yyyy") ?? "Chưa trả")</td>
+                                            <td>
+                                                <span class="text-danger">
+                                                    <i class="bi bi-exclamation-triangle"></i> @daysLate ngày
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <strong class="text-danger">
+                                                    @fine.Amount.ToString("N0") VND
+                                                </strong>
+                                            </td>
+                                            <td>
+                                                @if (isPaid)
+                                                {
+                                                    <span class="badge bg-success">Đã thanh toán</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-danger">Chưa thanh toán</span>
+                                                }
+                                            </td>
+                                            <td>
+                                                @if (!isPaid)
+                                                {
+                                                    <button type="button" class="btn btn-outline-danger btn-sm" 
+                                                            onclick="payFine(@fine.FineId)">
+                                                        <i class="bi bi-credit-card"></i> Thanh toán
+                                                    </button>
+                                                }
+                                                else
+                                                {
+                                                    <span class="text-muted">Đã thanh toán</span>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- Summary -->
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="card bg-light">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Tổng kết</h6>
+                                        <p class="mb-1">Tổng số phạt: <strong>@Model.Fines.Count</strong></p>
+                                        <p class="mb-1">Đã thanh toán: <strong class="text-success">@Model.Fines.Count(f => f.Status == "Paid")</strong></p>
+                                        <p class="mb-0">Chưa thanh toán: <strong class="text-danger">@Model.Fines.Count(f => f.Status == "Unpaid")</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-warning text-white">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Tổng tiền phạt</h6>
+                                        <h4 class="mb-0">@Model.Fines.Sum(f => f.Amount).ToString("N0") VND</h4>
+                                        <small>Chưa thanh toán: @Model.Fines.Where(f => f.Status == "Unpaid").Sum(f => f.Amount).ToString("N0") VND</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <i class="bi bi-check-circle display-1 text-success"></i>
+                    <h4 class="mt-3">Bạn không có phạt nào</h4>
+                    <p class="text-muted">Hãy trả sách đúng hạn để tránh bị phạt</p>
+                    <a href="/UserPage/CurrentBorrows" class="btn btn-primary">
+                        <i class="bi bi-book"></i> Xem sách đang mượn
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Payment Modal -->
+<div class="modal fade" id="paymentModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Thanh toán phạt</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form method="post" id="paymentForm">
+                <div class="modal-body">
+                    <p>Bạn có chắc chắn muốn thanh toán phạt này?</p>
+                    <div class="alert alert-info">
+                        <i class="bi bi-info-circle"></i>
+                        <strong>Lưu ý:</strong> Sau khi thanh toán, bạn có thể mượn sách bình thường.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="submit" class="btn btn-danger">
+                        <i class="bi bi-credit-card"></i> Xác nhận thanh toán
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function payFine(fineId) {
+            document.getElementById('paymentForm').action = `/UserPage/Fines?handler=Pay&fineId=${fineId}`;
+            new bootstrap.Modal(document.getElementById('paymentModal')).show();
+        }
+    </script>
+}
+
+@section Styles {
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+} 
