@@ -30,7 +30,7 @@ namespace DataAcess
             existing.AuthorId = book.AuthorId;
             existing.CategoryId = book.CategoryId;
             existing.PublisherId = book.PublisherId;
-            existing.PublishYear = book.PublishYear;
+            existing.PublishDate = book.PublishDate;
             existing.ISBN = book.ISBN;
             existing.Description = book.Description;
             existing.Quantity = book.Quantity;

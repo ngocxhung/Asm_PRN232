@@ -5,6 +5,7 @@ using BussinessObjects.Models;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace LibraryManagement_WebAPI.Controllers
 {
@@ -28,10 +29,30 @@ namespace LibraryManagement_WebAPI.Controllers
         public async Task<IActionResult> Get(int id) => Ok(await _bookRepository.GetByIdAsync(id));
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Book book) => Ok(await _bookRepository.CreateAsync(book));
+        public async Task<IActionResult> Create([FromBody] Book book)
+        {
+            try
+            {
+                return Ok(await _bookRepository.CreateAsync(book));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Book book) => Ok(await _bookRepository.UpdateAsync(id, book));
+        public async Task<IActionResult> Update(int id, [FromBody] Book book)
+        {
+            try
+            {
+                return Ok(await _bookRepository.UpdateAsync(id, book));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id) => Ok(await _bookRepository.DeleteAsync(id));
@@ -47,5 +68,11 @@ namespace LibraryManagement_WebAPI.Controllers
 
         [HttpGet("categories")]
         public async Task<IActionResult> GetCategories() => Ok(await _context.Categories.ToListAsync());
+
+        [HttpGet("publishers")]
+        public async Task<IActionResult> GetPublishers([FromServices] LibraryDbContext context)
+        {
+            return Ok(await context.Publishers.ToListAsync());
+        }
     }
 } 

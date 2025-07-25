@@ -6,6 +6,8 @@ using System.Net.Http.Headers;
 using BussinessObjects.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System;
+using System.IO;
 
 namespace LibraryManagement_WebApp.Pages.Admin
 {
@@ -14,6 +16,7 @@ namespace LibraryManagement_WebApp.Pages.Admin
         public List<Book> Books { get; set; }
         public List<Author> Authors { get; set; }
         public List<Category> Categories { get; set; }
+        public List<Publisher> Publishers { get; set; }
         [BindProperty]
         public Book BookModel { get; set; }
         public bool ShowForm { get; set; }
@@ -61,6 +64,27 @@ namespace LibraryManagement_WebApp.Pages.Admin
         public async Task<IActionResult> OnPostSaveAsync()
         {
             var isEdit = BookModel.BookId > 0;
+            if (!isEdit && BookModel.Available == 0)
+            {
+                BookModel.Available = BookModel.Quantity;
+            }
+            var files = Request.Form.Files;
+            if (files.Count > 0)
+            {
+                var file = files[0];
+                var fileName = Guid.NewGuid() + Path.GetExtension(file.FileName);
+                var filePath = Path.Combine("wwwroot", "uploads", fileName);
+                Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+                BookModel.ImageUrl = "/uploads/" + fileName;
+            }
+            else if (string.IsNullOrEmpty(BookModel.ImageUrl) && !string.IsNullOrEmpty(Request.Form["CurrentImageUrl"]))
+            {
+                BookModel.ImageUrl = Request.Form["CurrentImageUrl"];
+            }
             using var client = CreateClient();
             var json = JsonSerializer.Serialize(BookModel);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -71,7 +95,8 @@ namespace LibraryManagement_WebApp.Pages.Admin
                 res = await client.PostAsync("https://localhost:5001/api/books", content);
             if (!res.IsSuccessStatusCode)
             {
-                ErrorMessage = "Lưu thất bại!";
+                var apiError = await res.Content.ReadAsStringAsync();
+                ErrorMessage = !string.IsNullOrWhiteSpace(apiError) ? apiError : "Lưu thất bại!";
                 ShowForm = true;
                 await LoadDropdowns();
                 await LoadBooks();
@@ -96,8 +121,9 @@ namespace LibraryManagement_WebApp.Pages.Admin
         }
         private async Task LoadDropdowns()
         {
-            Authors = await GetApi<List<Author>>("https://localhost:5001/api/books/authors");
-            Categories = await GetApi<List<Category>>("https://localhost:5001/api/books/categories");
+            Authors = await GetApi<List<Author>>("https://localhost:5001/api/authors");
+            Categories = await GetApi<List<Category>>("https://localhost:5001/api/categories");
+            Publishers = await GetApi<List<Publisher>>("https://localhost:5001/api/publishers");
         }
         private async Task<T> GetApi<T>(string url)
         {

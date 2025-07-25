@@ -1,6 +1,7 @@
 @page
 @model LibraryManagement_WebApp.Pages.Admin.BooksModel
 @{
+    Layout = "_AdminLayout";
     ViewData["Title"] = "Quản lý sách";
 }
 <h2 class="mt-4 mb-4">Quản lý sách</h2>
@@ -63,8 +64,12 @@ function filterBooks() {
 </script>
 @if (Model.ShowForm)
 {
-    <form method="post" class="card p-4 mb-4" style="max-width:700px;">
+    <form method="post" enctype="multipart/form-data" class="card p-4 mb-4" style="max-width:700px;">
         <input type="hidden" asp-for="BookModel.BookId" />
+        @if (!string.IsNullOrEmpty(Model.BookModel?.ImageUrl))
+        {
+            <input type="hidden" name="CurrentImageUrl" value="@Model.BookModel.ImageUrl" />
+        }
         <div class="row">
             <div class="col-md-6">
                 <div class="mb-3">
@@ -73,7 +78,7 @@ function filterBooks() {
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Tác giả</label>
-                    <select name="BookModel.AuthorId" class="form-select">
+                    <select name="BookModel.AuthorId" class="form-select" required>
                         <option value="">-- Chọn tác giả --</option>
                         @if (Model.Authors != null)
                         {
@@ -93,7 +98,7 @@ function filterBooks() {
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Thể loại</label>
-                    <select name="BookModel.CategoryId" class="form-select">
+                    <select name="BookModel.CategoryId" class="form-select" required>
                         <option value="">-- Chọn thể loại --</option>
                         @if (Model.Categories != null)
                         {
@@ -113,11 +118,27 @@ function filterBooks() {
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Nhà xuất bản</label>
-                    <input asp-for="BookModel.PublisherId" class="form-control" />
+                    <select name="BookModel.PublisherId" class="form-select" required>
+                        <option value="">-- Chọn NXB --</option>
+                        @if (Model.Publishers != null)
+                        {
+                            foreach (var p in Model.Publishers)
+                            {
+                                if (Model.BookModel != null && Model.BookModel.PublisherId == p.PublisherId)
+                                {
+                                    <option value="@p.PublisherId" selected>@p.PublisherName</option>
+                                }
+                                else
+                                {
+                                    <option value="@p.PublisherId">@p.PublisherName</option>
+                                }
+                            }
+                        }
+                    </select>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Năm xuất bản</label>
-                    <input asp-for="BookModel.PublishYear" class="form-control" />
+                    <label class="form-label">Ngày xuất bản</label>
+                    <input type="date" name="BookModel.PublishDate" class="form-control" value="@(Model.BookModel?.PublishDate?.ToString("yyyy-MM-dd") ?? "")" />
                 </div>
                 <div class="mb-3">
                     <label class="form-label">ISBN</label>
@@ -143,7 +164,11 @@ function filterBooks() {
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Ảnh</label>
-                    <input asp-for="BookModel.ImageUrl" class="form-control" />
+                    <input type="file" name="ImageFile" class="form-control" />
+                    @if (!string.IsNullOrEmpty(Model.BookModel?.ImageUrl))
+                    {
+                        <img src="@Model.BookModel.ImageUrl" alt="Ảnh sách" style="max-width:100px;max-height:100px;" />
+                    }
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Mô tả</label>

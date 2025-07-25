@@ -60,7 +60,8 @@ namespace LibraryManagement_WebApp.Pages.Admin
                 res = await client.PostAsync("https://localhost:5001/api/publishers", content);
             if (!res.IsSuccessStatusCode)
             {
-                ErrorMessage = "Lưu thất bại!";
+                var apiError = await res.Content.ReadAsStringAsync();
+                ErrorMessage = !string.IsNullOrWhiteSpace(apiError) ? apiError : "Lưu thất bại!";
                 ShowForm = true;
                 await LoadPublishers();
                 return Page();

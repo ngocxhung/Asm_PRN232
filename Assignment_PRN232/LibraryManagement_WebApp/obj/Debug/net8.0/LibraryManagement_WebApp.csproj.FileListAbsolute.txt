@@ -88,3 +88,4 @@ D:\PRN232\Asm_PRN232\Assignment_PRN232\LibraryManagement_WebApp\obj\Debug\net8.0
 D:\PRN232\Asm_PRN232\Assignment_PRN232\LibraryManagement_WebApp\obj\Debug\net8.0\LibraryM.36FE6C63.Up2Date
 D:\PRN232\Asm_PRN232\Assignment_PRN232\LibraryManagement_WebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\PRN232\Asm_PRN232\Assignment_PRN232\LibraryManagement_WebApp\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\PRN232\Asm_PRN232\Assignment_PRN232\LibraryManagement_WebApp\obj\Debug\net8.0\LibraryManagement_WebApp.MvcApplicationPartsAssemblyInfo.cs

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "V3cfopzHrXR/wpuqRg0FDPe+uD03K3WvVtpzoZj2f0I=",
+  "Hash": "8lcFeNlqwhZOR312IByVyBQHTrhO6mwaunF5La/kFLM=",
   "Source": "LibraryManagement_WebApp",
   "BasePath": "_content/LibraryManagement_WebApp",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\wwwroot\\uploads\\fea27bec-fce9-4155-9d62-3a73745f704b.png",
+      "SourceId": "LibraryManagement_WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\wwwroot\\",
+      "BasePath": "_content/LibraryManagement_WebApp",
+      "RelativePath": "uploads/fea27bec-fce9-4155-9d62-3a73745f704b.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\fea27bec-fce9-4155-9d62-3a73745f704b.png"
     }
   ]
 }

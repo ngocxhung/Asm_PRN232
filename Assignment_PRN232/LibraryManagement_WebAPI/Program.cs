@@ -24,6 +24,14 @@ namespace LibraryManagement_WebAPI
             builder.Services.AddScoped<DataAcess.UserDAO>();
             builder.Services.AddScoped<Repositories.IUserRepository, Repositories.UserRepository>();
             builder.Services.AddScoped<LibraryManagement_WebAPI.Services.IJwtService, LibraryManagement_WebAPI.Services.JwtService>();
+            builder.Services.AddScoped<DataAcess.AuthorDAO>();
+            builder.Services.AddScoped<Repositories.IAuthorRepository, Repositories.AuthorRepository>();
+            builder.Services.AddScoped<DataAcess.PublisherDAO>();
+            builder.Services.AddScoped<Repositories.IPublisherRepository, Repositories.PublisherRepository>();
+            builder.Services.AddScoped<DataAcess.CategoryDAO>();
+            builder.Services.AddScoped<Repositories.ICategoryRepository, Repositories.CategoryRepository>();
+            builder.Services.AddScoped<DataAcess.BookDAO>();
+            builder.Services.AddScoped<Repositories.IBookRepository, Repositories.BookRepository>();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

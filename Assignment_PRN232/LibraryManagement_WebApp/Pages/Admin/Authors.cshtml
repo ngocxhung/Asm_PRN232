@@ -1,6 +1,7 @@
 @page
 @model LibraryManagement_WebApp.Pages.Admin.AuthorsModel
 @{
+    Layout = "_AdminLayout";
     ViewData["Title"] = "Quản lý tác giả";
 }
 <h2 class="mt-4 mb-4">Quản lý tác giả</h2>
@@ -22,7 +23,7 @@
         <input type="hidden" asp-for="AuthorModel.AuthorId" />
         <div class="mb-3">
             <label class="form-label">Tên tác giả</label>
-            <input asp-for="AuthorModel.AuthorName" class="form-control" />
+            <input asp-for="AuthorModel.AuthorName" class="form-control" required />
         </div>
         <div class="mb-3">
             <label class="form-label">Mô tả</label>
