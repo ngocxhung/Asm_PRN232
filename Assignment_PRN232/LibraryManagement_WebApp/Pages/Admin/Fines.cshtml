@@ -5,4 +5,40 @@
     ViewData["Title"] = "Quản lý phạt";
 }
 <h2>Quản lý phạt</h2>
-<p>Hiển thị danh sách, thêm, sửa, xóa phạt ở đây.</p> 
+@if (Model.ErrorMessage != null)
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+<form method="get" class="mb-3 row" style="max-width:500px;">
+    <div class="col-md-8">
+        <input class="form-control" name="SearchKeyword" placeholder="Tìm theo tên người dùng hoặc mã phạt" value="@Model.SearchKeyword" />
+    </div>
+    <div class="col-md-4">
+        <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+    </div>
+</form>
+<div class="table-responsive">
+    <table class="table table-bordered table-hover align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>Mã phạt</th><th>Tên người dùng</th><th>Số tiền</th><th>Lý do</th><th>Ngày phạt</th><th>Trạng thái</th>
+            </tr>
+        </thead>
+        <tbody>
+        @if (Model.Fines != null)
+        {
+            foreach (var f in Model.Fines)
+            {
+                <tr>
+                    <td>@f.FineId</td>
+                    <td>@(f.BorrowRecord != null && f.BorrowRecord.User != null ? f.BorrowRecord.User.FullName : "Không rõ")</td>
+                    <td>@f.Amount.ToString("N0")</td>
+                    <td>@f.Reason</td>
+                        <td>@f.PaidDate</td>
+                    <td>@(f.Paid ? "Đã nộp" : "Chưa nộp")</td>
+                </tr>
+            }
+        }
+        </tbody>
+    </table>
+</div> 

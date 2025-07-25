@@ -16,13 +16,33 @@ namespace LibraryManagement_WebApp.Pages.Admin
         public BussinessObjects.Models.User UserModel { get; set; }
         public bool ShowForm { get; set; }
         public string ErrorMessage { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public string SearchKeyword { get; set; }
 
         public async Task<IActionResult> OnGetAsync()
         {
             var role = HttpContext.Session.GetString("UserRole");
             if (role != "Admin")
                 return RedirectToPage("/Login");
-            await LoadUsers();
+            if (!string.IsNullOrEmpty(SearchKeyword))
+            {
+                using var client = CreateClient();
+                var res = await client.GetAsync($"https://localhost:5001/api/users/search?keyword={SearchKeyword}");
+                if (res.IsSuccessStatusCode)
+                {
+                    var json = await res.Content.ReadAsStringAsync();
+                    Users = JsonSerializer.Deserialize<List<BussinessObjects.Models.User>>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                }
+                else
+                {
+                    Users = new List<BussinessObjects.Models.User>();
+                    ErrorMessage = "Không tìm được người dùng phù hợp!";
+                }
+            }
+            else
+            {
+                await LoadUsers();
+            }
             return Page();
         }
 

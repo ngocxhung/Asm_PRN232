@@ -3,16 +3,25 @@
 @{
     ViewData["Title"] = "Login";
 }
-<h2>Login</h2>
-<form method="post">
-    <div>
-        <label>Username</label>
-        <input asp-for="Username" />
+<div class="d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow" style="width: 350px;">
+        <div class="card-body">
+            <h3 class="card-title text-center mb-4">Đăng nhập</h3>
+            <form method="post">
+                <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input asp-for="Username" class="form-control" placeholder="Nhập username" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input asp-for="Password" type="password" class="form-control" placeholder="Nhập mật khẩu" />
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+                <div class="text-center mt-3">
+                    <a asp-page="/Register">Chưa có tài khoản? Đăng ký</a>
+                </div>
+                <div class="text-danger mt-2">@Model.ErrorMessage</div>
+            </form>
+        </div>
     </div>
-    <div>
-        <label>Password</label>
-        <input asp-for="Password" type="password" />
-    </div>
-    <button type="submit">Login</button>
-    <div style="color:red">@Model.ErrorMessage</div>
-</form> 
+</div> 

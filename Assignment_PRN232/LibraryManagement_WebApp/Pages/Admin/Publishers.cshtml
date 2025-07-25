@@ -9,10 +9,18 @@
 {
     <div class="alert alert-danger">@Model.ErrorMessage</div>
 }
+@if (!Model.ShowForm)
+{
+    <form method="get" class="mb-3 row" style="max-width:500px;">
+        <div class="col-md-8">
+            <input class="form-control" name="SearchKeyword" placeholder="Tìm theo tên NXB" value="@Model.SearchKeyword" />
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+        </div>
+    </form>
+}
 <div class="mb-3 row">
-    <div class="col-md-4">
-        <input class="form-control" placeholder="Tìm theo tên NXB" value="@Model.SearchKeyword" onchange="location.href='?search='+this.value" />
-    </div>
     <div class="col-md-8 text-end">
         <button class="btn btn-success" onclick="window.location.href='@Url.Page("/Admin/Publishers", null, new { handler = "Add" })'">Thêm NXB</button>
     </div>

@@ -14,8 +14,8 @@ namespace DataAcess
             _context = context;
         }
 
-        public async Task<List<Book>> GetAllAsync() => await _context.Books.Include(b => b.Author).Include(b => b.Category).ToListAsync();
-        public async Task<Book> GetByIdAsync(int id) => await _context.Books.Include(b => b.Author).Include(b => b.Category).FirstOrDefaultAsync(b => b.BookId == id);
+        public async Task<List<Book>> GetAllAsync() => await _context.Books.Include(b => b.Author).Include(b => b.Category).Include(b => b.Publisher).ToListAsync();
+        public async Task<Book> GetByIdAsync(int id) => await _context.Books.Include(b => b.Author).Include(b => b.Category).Include(b => b.Publisher).FirstOrDefaultAsync(b => b.BookId == id);
         public async Task<Book> CreateAsync(Book book)
         {
             _context.Books.Add(book);
@@ -30,7 +30,7 @@ namespace DataAcess
             existing.AuthorId = book.AuthorId;
             existing.CategoryId = book.CategoryId;
             existing.PublisherId = book.PublisherId;
-            existing.PublishDate = book.PublishDate;
+            existing.PublishYear = book.PublishYear;
             existing.ISBN = book.ISBN;
             existing.Description = book.Description;
             existing.Quantity = book.Quantity;
@@ -51,13 +51,13 @@ namespace DataAcess
         }
         public async Task<List<Book>> SearchAsync(string keyword)
         {
-            return await _context.Books.Include(b => b.Author).Include(b => b.Category)
+            return await _context.Books.Include(b => b.Author).Include(b => b.Category).Include(b => b.Publisher)
                 .Where(b => b.Title.Contains(keyword) || b.BookId.ToString() == keyword)
                 .ToListAsync();
         }
         public async Task<List<Book>> FilterAsync(int? categoryId, int? authorId)
         {
-            var query = _context.Books.Include(b => b.Author).Include(b => b.Category).AsQueryable();
+            var query = _context.Books.Include(b => b.Author).Include(b => b.Category).Include(b => b.Publisher).AsQueryable();
             if (categoryId.HasValue)
                 query = query.Where(b => b.CategoryId == categoryId);
             if (authorId.HasValue)

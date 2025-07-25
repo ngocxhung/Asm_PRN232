@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace DataAcess
 {
@@ -70,6 +71,13 @@ namespace DataAcess
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
             return true;
+        }
+
+        public async Task<List<User>> SearchAsync(string keyword)
+        {
+            return await _context.Users
+                .Where(u => u.FullName.Contains(keyword) || u.Username.Contains(keyword))
+                .ToListAsync();
         }
     }
 }

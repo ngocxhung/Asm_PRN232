@@ -3,23 +3,83 @@
   "WorkspaceRootPath": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\bussinessobjects\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\librarymanagement_webapp\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|solutionrelative:librarymanagement_webapp\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\bussinessobjects\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\bussinessobjects\\bussinessobjects.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\bussinessobjects.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\bussinessobjects\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58AC5E7B-B26C-4567-9282-9290C3E82F4F}|LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\librarymanagement_webapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58AC5E7B-B26C-4567-9282-9290C3E82F4F}|LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj|solutionrelative:librarymanagement_webapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58AC5E7B-B26C-4567-9282-9290C3E82F4F}|LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\librarymanagement_webapi\\controllers\\finescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58AC5E7B-B26C-4567-9282-9290C3E82F4F}|LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj|solutionrelative:librarymanagement_webapi\\controllers\\finescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\librarymanagement_webapp\\pages\\admin\\books.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\librarymanagement_webapp\\pages\\admin\\borrows.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|solutionrelative:librarymanagement_webapp\\pages\\admin\\borrows.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\librarymanagement_webapp\\pages\\admin\\publishers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|solutionrelative:librarymanagement_webapp\\pages\\admin\\publishers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\librarymanagement_webapp\\pages\\admin\\authors.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|solutionrelative:librarymanagement_webapp\\pages\\admin\\authors.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\dataacess\\bookdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|solutionrelative:dataacess\\bookdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\dataacess\\authordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|solutionrelative:dataacess\\authordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\librarymanagement_webapp\\pages\\admin\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|solutionrelative:librarymanagement_webapp\\pages\\admin\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\librarymanagement_webapp\\pages\\admin\\books.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|solutionrelative:librarymanagement_webapp\\pages\\admin\\books.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\librarymanagement_webapp\\pages\\admin\\categories.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58AC5E7B-B26C-4567-9282-9290C3E82F4F}|LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\librarymanagement_webapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58AC5E7B-B26C-4567-9282-9290C3E82F4F}|LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj|solutionrelative:librarymanagement_webapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58AC5E7B-B26C-4567-9282-9290C3E82F4F}|LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\librarymanagement_webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58AC5E7B-B26C-4567-9282-9290C3E82F4F}|LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj|solutionrelative:librarymanagement_webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\dataacess\\publisherdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|solutionrelative:dataacess\\publisherdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\dataacess\\dataacess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|solutionrelative:dataacess\\dataacess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DC15B65-4DA3-4AE8-A149-A6544126E269}|Repositories\\Repositories.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\repositories\\publisherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DC15B65-4DA3-4AE8-A149-A6544126E269}|Repositories\\Repositories.csproj|solutionrelative:repositories\\publisherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\bussinessobjects\\models\\borrowdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\models\\borrowdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\librarymanagement_webapp\\pages\\admin\\categories.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|solutionrelative:librarymanagement_webapp\\pages\\admin\\categories.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\dataacess\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\dataacess\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|solutionrelative:dataacess\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -27,15 +87,11 @@
       "RelativeMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|solutionrelative:dataacess\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\dataacess\\bookdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|solutionrelative:dataacess\\bookdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\bussinessobjects\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\bussinessobjects\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\bussinessobjects\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\bussinessobjects\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,12 +99,8 @@
       "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|d:\\prn232\\asm_prn232\\assignment_prn232\\librarymanagement_webapp\\pages\\userpage\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\librarymanagement_webapp\\pages\\userpage\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|solutionrelative:librarymanagement_webapp\\pages\\userpage\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\bussinessobjects\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE6530E3-031F-4291-994B-DC3D95436351}|BussinessObjects\\BussinessObjects.csproj|solutionrelative:bussinessobjects\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\librarymanagement_webapp\\pages\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -67,14 +119,6 @@
       "RelativeMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|solutionrelative:librarymanagement_webapp\\pages\\userpage\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\librarymanagement_webapp\\pages\\admin\\publishers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|solutionrelative:librarymanagement_webapp\\pages\\admin\\publishers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\librarymanagement_webapp\\pages\\admin\\authors.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|solutionrelative:librarymanagement_webapp\\pages\\admin\\authors.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\librarymanagement_webapp\\pages\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|solutionrelative:librarymanagement_webapp\\pages\\admin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -91,10 +135,6 @@
       "RelativeMoniker": "D:0:0:{58AC5E7B-B26C-4567-9282-9290C3E82F4F}|LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj|solutionrelative:librarymanagement_webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58AC5E7B-B26C-4567-9282-9290C3E82F4F}|LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\librarymanagement_webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58AC5E7B-B26C-4567-9282-9290C3E82F4F}|LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj|solutionrelative:librarymanagement_webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\librarymanagement_webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{133B44EF-FBE2-485B-BFBC-A7692BD740D3}|LibraryManagement_WebApp\\LibraryManagement_WebApp.csproj|solutionrelative:librarymanagement_webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -105,10 +145,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6DC15B65-4DA3-4AE8-A149-A6544126E269}|Repositories\\Repositories.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6DC15B65-4DA3-4AE8-A149-A6544126E269}|Repositories\\Repositories.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\dataacess\\dataacess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{EA01CCA5-48A9-41D3-8097-05C6AAFD34EA}|DataAcess\\DataAcess.csproj|solutionrelative:dataacess\\dataacess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58AC5E7B-B26C-4567-9282-9290C3E82F4F}|LibraryManagement_WebAPI\\LibraryManagement_WebAPI.csproj|D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\librarymanagement_webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -142,84 +178,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Categories.cshtml.cs",
-              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Categories.cshtml.cs",
-              "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Admin\\Categories.cshtml.cs",
-              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Categories.cshtml.cs",
-              "RelativeToolTip": "LibraryManagement_WebApp\\Pages\\Admin\\Categories.cshtml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAABcAAAA",
+              "DocumentIndex": 0,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Register.cshtml.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Register.cshtml.cs",
+              "RelativeToolTip": "LibraryManagement_WebApp\\Pages\\Register.cshtml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA7wBUAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:11:37.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Books.cshtml.cs",
-              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Books.cshtml.cs",
-              "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Admin\\Books.cshtml.cs",
-              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Books.cshtml.cs",
-              "RelativeToolTip": "LibraryManagement_WebApp\\Pages\\Admin\\Books.cshtml.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAqwGsAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:09:56.299Z",
+              "WhenOpened": "2025-07-25T18:35:58.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CategoryDAO.cs",
-              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\CategoryDAO.cs",
-              "RelativeDocumentMoniker": "DataAcess\\CategoryDAO.cs",
-              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\CategoryDAO.cs",
-              "RelativeToolTip": "DataAcess\\CategoryDAO.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAA1AAAA",
+              "Title": "FinesController.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Controllers\\FinesController.cs",
+              "RelativeDocumentMoniker": "LibraryManagement_WebAPI\\Controllers\\FinesController.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Controllers\\FinesController.cs",
+              "RelativeToolTip": "LibraryManagement_WebAPI\\Controllers\\FinesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAmwCUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:09:15.569Z",
+              "WhenOpened": "2025-07-25T18:11:08.668Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookDAO.cs",
-              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\BookDAO.cs",
-              "RelativeDocumentMoniker": "DataAcess\\BookDAO.cs",
-              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\BookDAO.cs",
-              "RelativeToolTip": "DataAcess\\BookDAO.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:08:22.616Z",
+              "DocumentIndex": 5,
+              "Title": "Borrows.cshtml",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Borrows.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Admin\\Borrows.cshtml",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Borrows.cshtml",
+              "RelativeToolTip": "LibraryManagement_WebApp\\Pages\\Admin\\Borrows.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T18:01:03.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BooksController.cs",
-              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Controllers\\BooksController.cs",
-              "RelativeDocumentMoniker": "LibraryManagement_WebAPI\\Controllers\\BooksController.cs",
-              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "LibraryManagement_WebAPI\\Controllers\\BooksController.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAmwEIAAAAuAAAA",
+              "DocumentIndex": 3,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "BussinessObjects\\Models\\Book.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\Book.cs",
+              "RelativeToolTip": "BussinessObjects\\Models\\Book.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACQAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:07:56.57Z",
+              "WhenOpened": "2025-07-25T16:51:46.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "BussinessObjects\\Models\\Category.cs",
-              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\Category.cs",
-              "RelativeToolTip": "BussinessObjects\\Models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T14:51:02.562Z",
+              "DocumentIndex": 2,
+              "Title": "BussinessObjects",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj",
+              "RelativeDocumentMoniker": "BussinessObjects\\BussinessObjects.csproj",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj",
+              "RelativeToolTip": "BussinessObjects\\BussinessObjects.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-25T16:44:07.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Books.cshtml",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Books.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Admin\\Books.cshtml",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Books.cshtml",
+              "RelativeToolTip": "LibraryManagement_WebApp\\Pages\\Admin\\Books.cshtml",
+              "ViewState": "AQIAALoAAAAAAAAAAAAkwNUAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T16:38:35.015Z",
               "EditorCaption": ""
             },
             {
@@ -236,20 +272,136 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Publisher.cs",
-              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\Publisher.cs",
-              "RelativeDocumentMoniker": "BussinessObjects\\Models\\Publisher.cs",
-              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\Publisher.cs",
-              "RelativeToolTip": "BussinessObjects\\Models\\Publisher.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "DocumentIndex": 14,
+              "Title": "PublisherDAO.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\PublisherDAO.cs",
+              "RelativeDocumentMoniker": "DataAcess\\PublisherDAO.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\PublisherDAO.cs",
+              "RelativeToolTip": "DataAcess\\PublisherDAO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T14:38:31.604Z",
+              "WhenOpened": "2025-07-25T16:20:02.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
+              "Title": "PublisherRepository.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\PublisherRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\PublisherRepository.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\PublisherRepository.cs",
+              "RelativeToolTip": "Repositories\\PublisherRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T16:15:20.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthorDAO.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\AuthorDAO.cs",
+              "RelativeDocumentMoniker": "DataAcess\\AuthorDAO.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\AuthorDAO.cs",
+              "RelativeToolTip": "DataAcess\\AuthorDAO.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T15:34:52.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\User.cs",
+              "RelativeDocumentMoniker": "BussinessObjects\\Models\\User.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\User.cs",
+              "RelativeToolTip": "BussinessObjects\\Models\\User.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA2wBsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:40:10.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BorrowDetail.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\BorrowDetail.cs",
+              "RelativeDocumentMoniker": "BussinessObjects\\Models\\BorrowDetail.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\BorrowDetail.cs",
+              "RelativeToolTip": "BussinessObjects\\Models\\BorrowDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T15:33:23.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookDAO.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\BookDAO.cs",
+              "RelativeDocumentMoniker": "DataAcess\\BookDAO.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\BookDAO.cs",
+              "RelativeToolTip": "DataAcess\\BookDAO.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAxwEMAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T15:08:22.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "LibraryManagement_WebAPI\\Controllers\\BooksController.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "LibraryManagement_WebAPI\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAAEEAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T15:07:56.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CategoryDAO.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\CategoryDAO.cs",
+              "RelativeDocumentMoniker": "DataAcess\\CategoryDAO.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\CategoryDAO.cs",
+              "RelativeToolTip": "DataAcess\\CategoryDAO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T15:09:15.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Authors.cshtml",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Authors.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Admin\\Authors.cshtml",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Authors.cshtml",
+              "RelativeToolTip": "LibraryManagement_WebApp\\Pages\\Admin\\Authors.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T18:09:35.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Publishers.cshtml",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Publishers.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Admin\\Publishers.cshtml",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Publishers.cshtml",
+              "RelativeToolTip": "LibraryManagement_WebApp\\Pages\\Admin\\Publishers.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAABEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T18:09:30.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "Profile.cshtml.cs",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\UserPage\\Profile.cshtml.cs",
               "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\UserPage\\Profile.cshtml.cs",
@@ -257,24 +409,86 @@
               "RelativeToolTip": "LibraryManagement_WebApp\\Pages\\UserPage\\Profile.cshtml.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAAgwCkAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T03:38:02.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-25T03:38:02.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Publisher.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\Publisher.cs",
+              "RelativeDocumentMoniker": "BussinessObjects\\Models\\Publisher.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\Publisher.cs",
+              "RelativeToolTip": "BussinessObjects\\Models\\Publisher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T14:38:31.604Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\User.cs",
-              "RelativeDocumentMoniker": "BussinessObjects\\Models\\User.cs",
-              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\User.cs",
-              "RelativeToolTip": "BussinessObjects\\Models\\User.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAIwBMAAAAiAAAA",
+              "Title": "Books.cshtml.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Books.cshtml.cs",
+              "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Admin\\Books.cshtml.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Books.cshtml.cs",
+              "RelativeToolTip": "LibraryManagement_WebApp\\Pages\\Admin\\Books.cshtml.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAAwJMAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T14:40:10.594Z"
+              "WhenOpened": "2025-07-25T15:09:56.299Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 21,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "BussinessObjects\\Models\\Category.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\Category.cs",
+              "RelativeToolTip": "BussinessObjects\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T14:51:02.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "LibraryManagement_WebAPI\\Program.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Program.cs",
+              "RelativeToolTip": "LibraryManagement_WebAPI\\Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAwDAAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T08:21:21.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DataAcess.csproj",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\DataAcess.csproj",
+              "RelativeDocumentMoniker": "DataAcess\\DataAcess.csproj",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\DataAcess.csproj",
+              "RelativeToolTip": "DataAcess\\DataAcess.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-24T07:50:07.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Categories.cshtml.cs",
+              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Categories.cshtml.cs",
+              "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Admin\\Categories.cshtml.cs",
+              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Categories.cshtml.cs",
+              "RelativeToolTip": "LibraryManagement_WebApp\\Pages\\Admin\\Categories.cshtml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T15:11:37.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "Author.cs",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\Author.cs",
               "RelativeDocumentMoniker": "BussinessObjects\\Models\\Author.cs",
@@ -282,12 +496,11 @@
               "RelativeToolTip": "BussinessObjects\\Models\\Author.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAIAywA0AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T14:39:00.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-23T14:39:00.056Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 32,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "LibraryManagement_WebAPI\\Controllers\\UsersController.cs",
@@ -299,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 33,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Program.cs",
               "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Program.cs",
@@ -311,20 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Book.cs",
-              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "BussinessObjects\\Models\\Book.cs",
-              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Models\\Book.cs",
-              "RelativeToolTip": "BussinessObjects\\Models\\Book.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T14:39:50.38Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 25,
               "Title": "Users.cshtml",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Users.cshtml",
               "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Admin\\Users.cshtml",
@@ -336,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 27,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Index.cshtml",
@@ -348,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\Class1.cs",
               "RelativeDocumentMoniker": "DataAcess\\Class1.cs",
@@ -356,36 +556,11 @@
               "RelativeToolTip": "DataAcess\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T14:19:58.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-23T14:19:58.746Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Authors.cshtml",
-              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Authors.cshtml",
-              "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Admin\\Authors.cshtml",
-              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Authors.cshtml",
-              "RelativeToolTip": "LibraryManagement_WebApp\\Pages\\Admin\\Authors.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-24T18:09:35.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Publishers.cshtml",
-              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Publishers.cshtml",
-              "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Admin\\Publishers.cshtml",
-              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin\\Publishers.cshtml",
-              "RelativeToolTip": "LibraryManagement_WebApp\\Pages\\Admin\\Publishers.cshtml",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEMAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-24T18:09:30.687Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 28,
               "Title": "Home.cshtml",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\UserPage\\Home.cshtml",
               "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\UserPage\\Home.cshtml",
@@ -397,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 26,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Login.cshtml",
               "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Login.cshtml",
@@ -409,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 34,
               "Title": "JwtService.cs",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "LibraryManagement_WebAPI\\Services\\JwtService.cs",
@@ -421,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 31,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\IUserRepository.cs",
@@ -433,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "Admin.cshtml.cs",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin.cshtml.cs",
               "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Admin.cshtml.cs",
@@ -445,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 36,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "LibraryManagement_WebAPI\\Properties\\launchSettings.json",
@@ -457,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 30,
               "Title": "UserDAO.cs",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\UserDAO.cs",
               "RelativeDocumentMoniker": "DataAcess\\UserDAO.cs",
@@ -469,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 37,
               "Title": "Admin.cshtml",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebApp\\Pages\\Admin.cshtml",
               "RelativeDocumentMoniker": "LibraryManagement_WebApp\\Pages\\Admin.cshtml",
@@ -481,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 35,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
@@ -493,19 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "LibraryManagement_WebAPI\\Program.cs",
-              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Program.cs",
-              "RelativeToolTip": "LibraryManagement_WebAPI\\Program.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwCAAAABcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T08:21:21.517Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 38,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "LibraryManagement_WebAPI\\Controllers\\AuthController.cs",
@@ -517,19 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "DataAcess.csproj",
-              "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\DataAcess.csproj",
-              "RelativeDocumentMoniker": "DataAcess\\DataAcess.csproj",
-              "ToolTip": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\DataAcess\\DataAcess.csproj",
-              "RelativeToolTip": "DataAcess\\DataAcess.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-24T07:50:07.678Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 39,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\LibraryManagement_WebAPI\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "LibraryManagement_WebAPI\\Controllers\\WeatherForecastController.cs",
@@ -541,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 41,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\Repositories\\Class1.cs",
               "RelativeDocumentMoniker": "Repositories\\Class1.cs",
@@ -552,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 40,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\Class1.cs",
               "RelativeDocumentMoniker": "BussinessObjects\\Class1.cs",

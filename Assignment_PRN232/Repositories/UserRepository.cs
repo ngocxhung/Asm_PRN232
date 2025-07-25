@@ -26,5 +26,6 @@ namespace Repositories
         public Task<User> CreateAsync(User user) => _userDao.CreateAsync(user);
         public Task<User> UpdateAsync(int id, User user) => _userDao.UpdateAsync(id, user);
         public Task<bool> DeleteAsync(int id) => _userDao.DeleteAsync(id);
+        public Task<List<User>> SearchAsync(string keyword) => _userDao.SearchAsync(keyword);
     }
 }

@@ -23,6 +23,9 @@ namespace LibraryManagement_WebAPI.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id) => Ok(await _userRepository.GetByIdAsync(id));
 
+        [HttpGet("search")]
+        public async Task<IActionResult> Search([FromQuery] string keyword) => Ok(await _userRepository.SearchAsync(keyword));
+
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] User user) => Ok(await _userRepository.CreateAsync(user));
 

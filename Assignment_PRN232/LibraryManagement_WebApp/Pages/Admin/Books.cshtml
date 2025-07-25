@@ -9,10 +9,18 @@
 {
     <div class="alert alert-danger">@Model.ErrorMessage</div>
 }
+@if (!Model.ShowForm)
+{
+    <form method="get" class="mb-3 row" style="max-width:500px;">
+        <div class="col-md-8">
+            <input class="form-control" name="SearchKeyword" placeholder="Tìm theo ID hoặc tên sách" value="@Model.SearchKeyword" />
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+        </div>
+    </form>
+}
 <div class="mb-3 row">
-    <div class="col-md-3">
-        <input class="form-control" placeholder="Tìm theo ID hoặc tên sách" value="@Model.SearchKeyword" onchange="location.href='?search='+this.value" />
-    </div>
     <div class="col-md-3">
         <select id="categoryFilter" class="form-select" onchange="filterBooks()">
             <option value="">-- Thể loại --</option>
@@ -137,8 +145,8 @@ function filterBooks() {
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Ngày xuất bản</label>
-                    <input type="date" name="BookModel.PublishDate" class="form-control" value="@(Model.BookModel?.PublishDate?.ToString("yyyy-MM-dd") ?? "")" />
+                    <label class="form-label">Năm xuất bản</label>
+                    <input asp-for="BookModel.PublishYear" class="form-control" type="number" min="0" max="2100" />
                 </div>
                 <div class="mb-3">
                     <label class="form-label">ISBN</label>
@@ -158,9 +166,12 @@ function filterBooks() {
                     <label class="form-label">Vị trí</label>
                     <input asp-for="BookModel.Location" class="form-control" />
                 </div>
-                <div class="mb-3 form-check">
-                    <input asp-for="BookModel.Status" class="form-check-input" type="checkbox" />
-                    <label class="form-check-label">Active</label>
+                <div class="mb-3">
+                    <label class="form-label">Trạng thái</label>
+                    <select asp-for="BookModel.Status" class="form-select">
+                        <option value="Available">Active</option>
+                        <option value="Unavailable">Deactive</option>
+                    </select>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Ảnh</label>
@@ -199,8 +210,8 @@ else
                     <tr>
                         <td>@b.BookId</td>
                         <td>@b.Title</td>
-                        <td>@b.Author?.AuthorName</td>
-                        <td>@b.Category?.CategoryName</td>
+                        <td>@(b.Author != null ? b.Author.AuthorName : "Không rõ")</td>
+                        <td>@(b.Category != null ? b.Category.CategoryName : "Không rõ")</td>
                         <td>@b.PublisherId</td>
                         <td>@b.Quantity</td>
                         <td>@b.Available</td>

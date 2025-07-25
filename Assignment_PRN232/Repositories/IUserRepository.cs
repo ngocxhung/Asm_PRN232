@@ -12,5 +12,6 @@ namespace Repositories
         Task<User> CreateAsync(User user);
         Task<User> UpdateAsync(int id, User user);
         Task<bool> DeleteAsync(int id);
+        Task<List<User>> SearchAsync(string keyword);
     }
 } 

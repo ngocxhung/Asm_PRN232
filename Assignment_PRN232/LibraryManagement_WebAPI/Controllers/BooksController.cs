@@ -62,17 +62,5 @@ namespace LibraryManagement_WebAPI.Controllers
 
         [HttpGet("filter")]
         public async Task<IActionResult> Filter([FromQuery] int? categoryId, [FromQuery] int? authorId) => Ok(await _bookRepository.FilterAsync(categoryId, authorId));
-
-        [HttpGet("authors")]
-        public async Task<IActionResult> GetAuthors() => Ok(await _context.Authors.ToListAsync());
-
-        [HttpGet("categories")]
-        public async Task<IActionResult> GetCategories() => Ok(await _context.Categories.ToListAsync());
-
-        [HttpGet("publishers")]
-        public async Task<IActionResult> GetPublishers([FromServices] LibraryDbContext context)
-        {
-            return Ok(await context.Publishers.ToListAsync());
-        }
     }
 } 
