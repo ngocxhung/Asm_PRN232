@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using BussinessObjects.Models;
 
 namespace LibraryManagement_WebAPI
 {
@@ -10,9 +14,37 @@ namespace LibraryManagement_WebAPI
             // Add services to the container.
 
             builder.Services.AddControllers();
+            // Đăng ký DbContext
+            builder.Services.AddDbContext<LibraryDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("MyCnn")));
+
+            // Cấu hình JWT
+            
+            // Đăng ký IUserRepository và UserRepository vào DI container để inject vào controller.
+            builder.Services.AddScoped<DataAcess.UserDAO>();
+            builder.Services.AddScoped<Repositories.IUserRepository, Repositories.UserRepository>();
+            builder.Services.AddScoped<LibraryManagement_WebAPI.Services.IJwtService, LibraryManagement_WebAPI.Services.JwtService>();
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            // Add authentication and authorization
+            builder.Services.AddAuthentication(Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                        ValidAudience = builder.Configuration["Jwt:Audience"],
+                        IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                    };
+                });
+            builder.Services.AddAuthorization();
 
             var app = builder.Build();
 
@@ -25,6 +57,7 @@ namespace LibraryManagement_WebAPI
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

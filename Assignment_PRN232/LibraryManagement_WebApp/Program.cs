@@ -1,4 +1,4 @@
-namespace LibraryManagement_WebApp
+﻿namespace LibraryManagement_WebApp
 {
     public class Program
     {
@@ -9,13 +9,20 @@ namespace LibraryManagement_WebApp
             // Add services to the container.
             builder.Services.AddRazorPages();
 
+            // ✅ Thêm cấu hình session
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30); // thời gian session tồn tại
+                options.Cookie.HttpOnly = true; // bảo mật cookie
+                options.Cookie.IsEssential = true; // bắt buộc để session hoạt động
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -23,6 +30,9 @@ namespace LibraryManagement_WebApp
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            // ✅ Bắt buộc phải có trước UseAuthorization
+            app.UseSession(); // << Bật session ở middleware
 
             app.UseAuthorization();
 

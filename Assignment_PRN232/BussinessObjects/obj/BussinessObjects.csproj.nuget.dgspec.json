@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\1_PRN232\\PE Thi thử\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj": {}
+    "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj": {}
   },
   "projects": {
-    "D:\\1_PRN232\\PE Thi thử\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj": {
+    "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1_PRN232\\PE Thi thử\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj",
+        "projectUniqueName": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj",
         "projectName": "BussinessObjects",
-        "projectPath": "D:\\1_PRN232\\PE Thi thử\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\1_PRN232\\PE Thi thử\\Assignment_PRN232\\BussinessObjects\\obj\\",
+        "projectPath": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\BussinessObjects.csproj",
+        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
+        "outputPath": "D:\\PRN232\\Asm_PRN232\\Assignment_PRN232\\BussinessObjects\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,13 +39,20 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.17, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -69,6 +72,10 @@
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[8.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -87,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

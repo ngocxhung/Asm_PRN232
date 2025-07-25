@@ -1,0 +1,17 @@
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\bin\Debug\net8.0\DataAcess.deps.json
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\bin\Debug\net8.0\DataAcess.dll
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\bin\Debug\net8.0\DataAcess.pdb
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\obj\Debug\net8.0\DataAcess.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\obj\Debug\net8.0\DataAcess.AssemblyInfoInputs.cache
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\obj\Debug\net8.0\DataAcess.AssemblyInfo.cs
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\obj\Debug\net8.0\DataAcess.csproj.CoreCompileInputs.cache
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\obj\Debug\net8.0\DataAcess.sourcelink.json
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\obj\Debug\net8.0\DataAcess.dll
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\obj\Debug\net8.0\refint\DataAcess.dll
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\obj\Debug\net8.0\DataAcess.pdb
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\obj\Debug\net8.0\ref\DataAcess.dll
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\bin\Debug\net8.0\appsettings.json
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\bin\Debug\net8.0\BussinessObjects.dll
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\bin\Debug\net8.0\BussinessObjects.pdb
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\obj\Debug\net8.0\DataAcess.csproj.AssemblyReference.cache
+D:\PRN232\Asm_PRN232\Assignment_PRN232\DataAcess\obj\Debug\net8.0\DataAcess.csproj.Up2Date

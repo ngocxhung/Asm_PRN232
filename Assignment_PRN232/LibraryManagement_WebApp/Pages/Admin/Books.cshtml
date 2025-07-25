@@ -1,0 +1,195 @@
+@page
+@model LibraryManagement_WebApp.Pages.Admin.BooksModel
+@{
+    ViewData["Title"] = "Quản lý sách";
+}
+<h2 class="mt-4 mb-4">Quản lý sách</h2>
+@if (Model.ErrorMessage != null)
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+<div class="mb-3 row">
+    <div class="col-md-3">
+        <input class="form-control" placeholder="Tìm theo ID hoặc tên sách" value="@Model.SearchKeyword" onchange="location.href='?search='+this.value" />
+    </div>
+    <div class="col-md-3">
+        <select id="categoryFilter" class="form-select" onchange="filterBooks()">
+            <option value="">-- Thể loại --</option>
+            @if (Model.Categories != null)
+            {
+                foreach (var c in Model.Categories)
+                {
+                    if (Model.CategoryId == c.CategoryId)
+                    {
+                        <option value="@c.CategoryId" selected>@c.CategoryName</option>
+                    }
+                    else
+                    {
+                        <option value="@c.CategoryId">@c.CategoryName</option>
+                    }
+                }
+            }
+        </select>
+    </div>
+    <div class="col-md-3">
+        <select id="authorFilter" class="form-select" onchange="filterBooks()">
+            <option value="">-- Tác giả --</option>
+            @if (Model.Authors != null)
+            {
+                foreach (var a in Model.Authors)
+                {
+                    if (Model.AuthorId == a.AuthorId)
+                    {
+                        <option value="@a.AuthorId" selected>@a.AuthorName</option>
+                    }
+                    else
+                    {
+                        <option value="@a.AuthorId">@a.AuthorName</option>
+                    }
+                }
+            }
+        </select>
+    </div>
+    <div class="col-md-3 text-end">
+        <button class="btn btn-success" onclick="window.location.href='@Url.Page("/Admin/Books", null, new { handler = "Add" })'">Thêm sách</button>
+    </div>
+</div>
+<script>
+function filterBooks() {
+    var cat = document.getElementById('categoryFilter').value;
+    var author = document.getElementById('authorFilter').value;
+    location.href = '?categoryId=' + cat + '&authorId=' + author;
+}
+</script>
+@if (Model.ShowForm)
+{
+    <form method="post" class="card p-4 mb-4" style="max-width:700px;">
+        <input type="hidden" asp-for="BookModel.BookId" />
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Tên sách</label>
+                    <input asp-for="BookModel.Title" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Tác giả</label>
+                    <select name="BookModel.AuthorId" class="form-select">
+                        <option value="">-- Chọn tác giả --</option>
+                        @if (Model.Authors != null)
+                        {
+                            foreach (var a in Model.Authors)
+                            {
+                                if (Model.BookModel != null && Model.BookModel.AuthorId == a.AuthorId)
+                                {
+                                    <option value="@a.AuthorId" selected>@a.AuthorName</option>
+                                }
+                                else
+                                {
+                                    <option value="@a.AuthorId">@a.AuthorName</option>
+                                }
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Thể loại</label>
+                    <select name="BookModel.CategoryId" class="form-select">
+                        <option value="">-- Chọn thể loại --</option>
+                        @if (Model.Categories != null)
+                        {
+                            foreach (var c in Model.Categories)
+                            {
+                                if (Model.BookModel != null && Model.BookModel.CategoryId == c.CategoryId)
+                                {
+                                    <option value="@c.CategoryId" selected>@c.CategoryName</option>
+                                }
+                                else
+                                {
+                                    <option value="@c.CategoryId">@c.CategoryName</option>
+                                }
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nhà xuất bản</label>
+                    <input asp-for="BookModel.PublisherId" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Năm xuất bản</label>
+                    <input asp-for="BookModel.PublishYear" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">ISBN</label>
+                    <input asp-for="BookModel.ISBN" class="form-control" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Số lượng</label>
+                    <input asp-for="BookModel.Quantity" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Còn lại</label>
+                    <input asp-for="BookModel.Available" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Vị trí</label>
+                    <input asp-for="BookModel.Location" class="form-control" />
+                </div>
+                <div class="mb-3 form-check">
+                    <input asp-for="BookModel.Status" class="form-check-input" type="checkbox" />
+                    <label class="form-check-label">Active</label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Ảnh</label>
+                    <input asp-for="BookModel.ImageUrl" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Mô tả</label>
+                    <textarea asp-for="BookModel.Description" class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3">
+            <button type="submit" asp-page-handler="Save" class="btn btn-primary">Lưu</button>
+            <button type="button" class="btn btn-secondary ms-2" onclick="window.location.href='@Url.Page("/Admin/Books")'">Hủy</button>
+        </div>
+    </form>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>ID</th><th>Tên sách</th><th>Tác giả</th><th>Thể loại</th><th>NXB</th><th>Số lượng</th><th>Còn lại</th><th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+            @if (Model.Books != null)
+            {
+                foreach (var b in Model.Books)
+                {
+                    <tr>
+                        <td>@b.BookId</td>
+                        <td>@b.Title</td>
+                        <td>@b.Author?.AuthorName</td>
+                        <td>@b.Category?.CategoryName</td>
+                        <td>@b.PublisherId</td>
+                        <td>@b.Quantity</td>
+                        <td>@b.Available</td>
+                        <td>
+                            <a class="btn btn-sm btn-warning me-1" href="@Url.Page("/Admin/Books", null, new { handler = "Edit", id = b.BookId })">Sửa</a>
+                            <a class="btn btn-sm btn-danger" href="@Url.Page("/Admin/Books", null, new { handler = "Delete", id = b.BookId })" onclick="return confirm('Xóa sách này?');">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            }
+            </tbody>
+        </table>
+    </div>
+}
+@section Styles {
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+} 

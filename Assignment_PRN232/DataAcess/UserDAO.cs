@@ -1,0 +1,75 @@
+﻿using BussinessObjects.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace DataAcess
+{
+    public class UserDAO
+    {
+        private readonly LibraryDbContext _context;
+        public UserDAO(LibraryDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<User> GetByUsernameAsync(string username)
+        {
+            return await _context.Users.FirstOrDefaultAsync(u => u.Username == username && u.Status);
+        }
+
+        public async Task<List<User>> GetAllAsync()
+        {
+            return await _context.Users.ToListAsync();
+        }
+
+        public async Task<User> GetByIdAsync(int id)
+        {
+            return await _context.Users.FindAsync(id);
+        }
+
+        public async Task<User> CreateAsync(User user)
+        {
+            // Kiểm tra trùng username (không phân biệt hoa thường)
+            if (await _context.Users.AnyAsync(u => u.Username.ToLower() == user.Username.ToLower()))
+                throw new System.Exception("Username đã tồn tại!");
+            // Hash password nếu có nhập
+            if (!string.IsNullOrEmpty(user.PasswordHash))
+                user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash);
+            else
+                throw new System.Exception("Password không được để trống!");
+            user.CreatedAt = System.DateTime.Now;
+            if (string.IsNullOrEmpty(user.ImageUrl))
+                user.ImageUrl = "default-user.png";
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+            return user;
+        }
+
+        public async Task<User> UpdateAsync(int id, User user)
+        {
+            var existing = await _context.Users.FindAsync(id);
+            if (existing == null) return null;
+            existing.FullName = user.FullName;
+            existing.Email = user.Email;
+            existing.Phone = user.Phone;
+            existing.Role = user.Role;
+            existing.Status = user.Status;
+            existing.ImageUrl = string.IsNullOrEmpty(user.ImageUrl) ? "default-user.png" : user.ImageUrl;
+            // Nếu nhập password mới thì hash lại
+            if (!string.IsNullOrEmpty(user.PasswordHash))
+                existing.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash);
+            await _context.SaveChangesAsync();
+            return existing;
+        }
+
+        public async Task<bool> DeleteAsync(int id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if (user == null) return false;
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+    }
+}

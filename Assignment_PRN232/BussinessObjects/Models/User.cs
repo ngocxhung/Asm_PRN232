@@ -26,6 +26,9 @@ namespace BussinessObjects.Models
         public DateTime CreatedAt { get; set; }
         [StringLength(255)]
         public string ImageUrl { get; set; }
-        public ICollection<BorrowRecord> BorrowRecords { get; set; }
+        [Microsoft.AspNetCore.Mvc.ModelBinding.BindNever]
+        [System.Text.Json.Serialization.JsonIgnore]
+        [Newtonsoft.Json.JsonIgnore]
+        public ICollection<BorrowRecord>? BorrowRecords { get; set; }
     }
 } 

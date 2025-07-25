@@ -1,0 +1,23 @@
+@page
+@model LibraryManagement_WebApp.Pages.AdminModel
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+<div style="display:flex; min-height:500px;">
+    <nav style="width:220px; background:#f5f5f5; padding:20px;">
+        <h4>Quản trị</h4>
+        <ul style="list-style:none; padding:0;">
+            <li><a href="/Admin/Users">Quản lý người dùng</a></li>
+            <li><a href="/Admin/Books">Quản lý sách</a></li>
+            <li><a href="/Admin/Borrows">Quản lý mượn trả</a></li>
+            <li><a href="/Admin/Categories">Quản lý thể loại</a></li>
+            <li><a href="/Admin/Publishers">Quản lý NXB</a></li>
+            <li><a href="/Admin/Authors">Quản lý tác giả</a></li>
+            <li><a href="/Admin/Fines">Quản lý phạt</a></li>
+        </ul>
+    </nav>
+    <main style="flex:1; padding:30px;">
+        <h2>Chào mừng Admin!</h2>
+        <p>Chọn chức năng quản trị ở menu bên trái.</p>
+    </main>
+</div> 

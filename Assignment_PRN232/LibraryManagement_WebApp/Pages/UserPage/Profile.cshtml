@@ -1,0 +1,44 @@
+@page
+@model LibraryManagement_WebApp.Pages.UserPage.ProfileModel
+@{
+    ViewData["Title"] = "Profile";
+}
+<h2>Thông tin cá nhân</h2>
+@if (Model.ErrorMessage != null)
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+<form method="post" class="card p-4 mb-4" style="max-width:600px;">
+    <input type="hidden" asp-for="UserModel.UserId" />
+    <input type="hidden" asp-for="UserModel.Role" />
+    <input type="hidden" asp-for="UserModel.Status" />
+    <input type="hidden" asp-for="UserModel.CreatedAt" />
+    <input type="hidden" asp-for="UserModel.PasswordHash" />
+    <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input asp-for="UserModel.Username" class="form-control" readonly />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input asp-for="UserModel.FullName" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input asp-for="UserModel.Email" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Phone</label>
+        <input asp-for="UserModel.Phone" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Image URL</label>
+        <input asp-for="UserModel.ImageUrl" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input asp-for="UserModel.PasswordHash" class="form-control" type="password" />
+    </div>
+    <div class="mt-3">
+        <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+    </div>
+</form> 
